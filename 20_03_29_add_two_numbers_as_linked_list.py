@@ -23,6 +23,7 @@ class Solution:
     while n1 or n2:
         # accumulate sum of current nodes from both lists plus carried value from
         # previous summation
+        # there is case when one list is longer than other one
         val1 = val2 = 0
         if n1:
             val1 = n1.val

@@ -48,6 +48,7 @@ class Solution:
     
       n = len(arr)
       ind = self.binarySearch(arr, 0, n-1, target)
+      # target value not found
       if ind == -1:
           return [ind, ind]
       else:

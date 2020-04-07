@@ -49,8 +49,8 @@ def two_sum(nums, k):
 def two_sum(nums, k):
     els = set(nums)
     # for each element, check that its complement is in an array
-    for val in nums:
-        if k-val in nums:
+    for val in els:
+        if k-val in els:
             return True
     # there is no such pair that sum up to k
     return False
